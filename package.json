@@ -2,13 +2,13 @@
   "name": "signalmixer",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/app.js",
+  "main": "./build/app.js",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "start:dev": "nodemon dist/index.js",
+    "start:dev": "nodemon build/index.js",
     "test": "echo \"Error: no tests specified\" && exit 1",
-    "clean": "rimraf ./dist/"
+    "clean": "rimraf ./build/"
   },
   "author": "",
   "license": "ISC",
