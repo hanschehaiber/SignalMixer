@@ -2,10 +2,18 @@
   "name": "signalmixer",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start:dev": "echo \"Error: not implemented yet\" && exit 1",
+    "test": "echo \"Error: no tests specified\" && exit 1",
+    "clean": "rimraf ./dist/"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "typescript": "^5.2.2"
+  }
 }
