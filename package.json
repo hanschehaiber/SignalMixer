@@ -2,20 +2,27 @@
   "name": "signalmixer",
   "version": "1.0.0",
   "description": "",
-  "main": "./build/app.js",
+  "main": "./build/src/app.js",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
     "start:dev": "nodemon build/index.js",
-    "test": "echo \"Error: no tests specified\" && exit 1",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts",
     "clean": "rimraf ./build/"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/chai": "^4.3.10",
     "@types/express": "^4.17.21",
+    "@types/mocha": "^10.0.4",
+    "@types/supertest": "^2.0.16",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
     "nodemon": "^3.0.1",
     "rimraf": "^5.0.5",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },
   "dependencies": {
