@@ -25,7 +25,7 @@ Which enables the following process:
     1. Execute automated deployment testing against staging
         1. Revert if deployment fails (will require other PRs to update)
         1. 🛑 END
-    1. Tag using SemVer
+    1. Tag using [SemVer](https://semver.org/)
     1. Add SemVer to docker image's tags
     1. Mark tag for release
     1. Deploy tagged docker image to production
