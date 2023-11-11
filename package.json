@@ -6,8 +6,8 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "start:dev": "nodemon build/index.js",
-    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "start:dev": "nodemon ./build/index.js",
+    "test": "mocha -r ts-node/register ./src/**/*.spec.ts",
     "clean": "rimraf ./build/"
   },
   "author": "",
