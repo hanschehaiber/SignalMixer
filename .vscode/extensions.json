@@ -1,3 +1,6 @@
 {
-  "recommendations": ["editorconfig.editorconfig"]
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "hbenl.vscode-mocha-test-adapter"
+  ]
 }
